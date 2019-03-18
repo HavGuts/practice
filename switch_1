@@ -1,3 +1,11 @@
+/* 
+switch문으로 아래와 같이 출력해보자.
+
+변수 num의 범위가 0<=num<10 ) 0이상 10미만
+변수 num의 범위가 10<=num<20 ) 10이상 20미만 
+그 외 경우) 음수 또는 20이상
+*/
+
 import java.util.Scanner;
 
 public class Ex04 {
