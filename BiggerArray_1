@@ -1,0 +1,32 @@
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int [][] bigger= new int[3][5];
+		
+		int [][] arr1= {
+				{5,10,2,7,5},
+				{4,6,2,2,9},
+				{1,9,2,8,4}
+		};
+		
+		int [][] arr2= {
+				{5,2,7,4,5},
+				{10,6,9,2,9},
+				{2,6,4,7,1}
+		};
+		
+		for(int i=0; i<arr1.length; i++) {
+			for(int j=0; j<arr2[i].length; j++) {
+				if(arr1[i][j]>arr2[i][j]) bigger[i][j]=arr1[i][j];
+				else bigger[i][j]=arr2[i][j];
+			}
+		}
+		
+		for(int i=0; i<bigger.length; i++) {
+			for(int j=0; j<bigger[i].length; j++) {
+				System.out.print(bigger[i][j]+" ");
+			}
+			System.out.println("");
+		}
+	}
